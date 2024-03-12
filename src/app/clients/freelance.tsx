@@ -21,7 +21,7 @@ export const Freelance = () => (
     </View>
 
     <Text style={tw('text-xs leading-normal')}>
-      During my studies at the TU Delft, I worked as a freelance web developer. I developed various frontend for
+      During my studies at the TU Delft, I worked as a freelance web developer. I developed various frontends for
       dashboards, using mustache.js, JavaScript and SCSS. Apart from that, I designed and developed many tailor-made
       WordPress websites.
     </Text>
