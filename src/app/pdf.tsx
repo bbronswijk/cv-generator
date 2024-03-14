@@ -2,13 +2,11 @@ import { PDFViewer, Document, Page, Text, View, Font } from '@react-pdf/renderer
 import { tw } from './util/tw';
 import React from 'react';
 import { Header } from './header';
-import { About } from './about';
-import { Vanderlande } from './clients/vanderlande';
-import { Hoogendoorn } from './clients/hoogendoorn';
-import { LyceoFE } from './clients/lyceo-fe';
-import { LyceoWp } from './clients/lyceo-wp';
-import { Freelance } from './clients/freelance';
+import { Intro } from './intro';
 import { Background } from './ui/background';
+import { Experience } from '@/app/ui/experience';
+import { englishCV } from '@/app/data/english.content';
+import { dutchCV } from '@/app/data/dutch.content';
 
 // https://github.com/diegomura/react-pdf/issues/1075
 Font.register({
@@ -28,29 +26,21 @@ Font.register({
 const CV = () => (
   <Document title="resume" style={{fontFamily: 'Raleway'}}>
 
-    <Page size="A4" style={tw('relative p-0 text-white')}>
-      <Background/>
-      <View style={tw('py-5 px-12')}>
-        <Header/>
-        <About/>
+    {/*{dutchCV.map((page) => (*/}
+    {englishCV.map((page) => (
+      <Page key={page.id} size="A4" style={tw('relative p-0 text-white')}>
+        <Background/>
+        <View style={tw('py-5 px-20')}>
+          <Header/>
+          {page.about && <Intro {...page.about}/>}
 
-        <View style={tw('gap-3 py-5')}>
-          <Text style={tw('text-2xl leading-none font-bold')}>Work experience</Text>
-          <Vanderlande/>
-          <Hoogendoorn/>
+          <View style={tw('gap-3 py-5')}>
+            {page.experienceTitle && <Text style={tw('text-2xl leading-none font-bold')}>{page.experienceTitle}</Text>}
+            {page.workExperience.map((experience) => <Experience key={experience.title} {...experience} />)}
+          </View>
         </View>
-      </View>
-    </Page>
-
-    <Page size="A4" style={tw('relative p-0 text-white')}>
-      <Background/>
-      <View style={tw('py-5 px-12 gap-3')}>
-        <Header/>
-        <LyceoFE/>
-        <LyceoWp/>
-        <Freelance/>
-      </View>
-    </Page>
+      </Page>
+    ))}
 
   </Document>
 );
