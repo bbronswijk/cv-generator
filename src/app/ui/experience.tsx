@@ -20,7 +20,7 @@ export const Experience = (experience: WorkExperience) => (
       {experience.description}
     </Text>
 
-    <View style={tw('flex flex-col')}>
+    <View style={tw('flex flex-col mb-3')}>
       {experience.activities.map((activity) => <ListItem key={activity}>{activity}</ListItem>)}
     </View>
   </>

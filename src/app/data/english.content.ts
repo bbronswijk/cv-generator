@@ -21,8 +21,18 @@ export const englishCV: CVPage[] = [{
   experienceTitle: 'Work experience',
   workExperience: [
     {
+      title: 'Passionate People client: ANWB',
+      date: 'June 2024 – Current',
+      techStack: [tech.typescript, tech.react, tech.kotlin, tech.redux, tech.mapBox, tech.playwright, tech.storybook, tech.scss, tech.vite, tech.vitest, tech.docker],
+      description: 'Working on the ANWB route planner. Updating the frontend of the tool to comply with modern standards, including performance, accessibility and test ' +
+        'coverage. Rewriting the API in Kotlin. This all should result in a leaner code base, faster delivery of new features, less bugs and a better user experience.',
+      activities: [
+
+      ],
+    },
+    {
       title: 'Passionate People client: Vanderlande',
-      date: 'March 2022 – Current',
+      date: 'March 2022 – June 2024',
       techStack: [tech.typescript, tech.angular, tech.ngrx, tech.moduleFederation, tech.d3, tech.playwright, tech.cucumber, tech.chartJs, tech.storybook, tech.docker],
       description: 'Fulfilled the senior frontend role within the team and coached junior developers. Worked on a process mining tool for the baggage \n' +
         'handling system of large airports. The tool contained rich interactions and various visualizations like a node segment diagram of the \n' +
@@ -36,8 +46,23 @@ export const englishCV: CVPage[] = [{
         'Worked on internal design system',
       ],
     },
+  ],
+}, {
+  id: 'page-2',
+  workExperience: [
     {
-      title: 'Passionate People client: Hoogendoorn Growth Management / Let’s Grow',
+      title: 'Passionate People client: Hoogendoorn Growth Management',
+      date: 'Apr 2021 – Feb 2022',
+      techStack: [tech.typescript, tech.nodeJs, tech.angular, tech.ngxs, tech.highCharts, tech.jest, tech.nestJS, tech.fabricJs, tech.scss],
+      description: 'Worked in two different teams within Hoogendoorn. Build a sophisticated dashboard for Greenhouse automation, with lots \n' +
+        'of views, reports, graphs and customizable content.',
+      activities: [
+        'Created a photoshop-like visual configurator for greenhouses using Fabric.js',
+        'Improved overall CSS architecture and responsive design',
+      ],
+    },
+    {
+      title: 'Passionate People client: Let’s Grow',
       date: 'Apr 2021 – Feb 2022',
       techStack: [tech.typescript, tech.nodeJs, tech.angular, tech.ngxs, tech.highCharts, tech.jest, tech.nestJS, tech.fabricJs, tech.scss],
       description: 'Worked in two different teams within Hoogendoorn. Build a sophisticated dashboard for Greenhouse automation, with lots \n' +
@@ -46,15 +71,9 @@ export const englishCV: CVPage[] = [{
         'Migration of .NET Core widgets and charts displayed in iFrames to Angular',
         'Enhanced performance of data heavy dashboard',
         'Set up a chart configurator with a complex user flow',
-        'Created a photoshop-like visual configurator for greenhouses using Fabric.js',
-        'Improved overall CSS architecture and responsive design',
         'Created workshops to teach team members about the workings of Angular, RXJS and Observables',
       ],
-    }
-  ],
-}, {
-  id: 'page-2',
-  workExperience: [
+    },
     {
       title: 'Lyceo – Senior Frontend Developer / Lead',
       date: 'Sept 2018 – Mar 2021',
@@ -70,6 +89,10 @@ export const englishCV: CVPage[] = [{
         'Created tracking time dashboard to analyse and improve the SCRUM process within the team',
       ],
     },
+  ],
+}, {
+  id: 'page-3',
+  workExperience: [
     {
       title: 'Lyceo – Wordpress Developer',
       date: 'Sept 2017 – Aug 2018',
