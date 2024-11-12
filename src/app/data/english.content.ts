@@ -23,11 +23,15 @@ export const englishCV: CVPage[] = [{
     {
       title: 'Passionate People client: ANWB',
       date: 'June 2024 – Current',
-      techStack: [tech.typescript, tech.react, tech.kotlin, tech.redux, tech.mapBox, tech.playwright, tech.storybook, tech.scss, tech.vite, tech.vitest, tech.docker],
-      description: 'Working on the ANWB route planner. Updating the frontend of the tool to comply with modern standards, including performance, accessibility and test ' +
-        'coverage. Rewriting the API in Kotlin. This all should result in a leaner code base, faster delivery of new features, less bugs and a better user experience.',
+      techStack: [tech.typescript, tech.nextJS, tech.kotlin, tech.redux, tech.mapBox, tech.playwright, tech.storybook, tech.scss, tech.vite, tech.vitest, tech.turboRepo, tech.aws],
+      description: 'Doing full-stack work on the ANWB route planner. Updating the frontend of the tool to comply with modern standards, including performance, accessibility and test ' +
+        'coverage. Rewriting the APIs in Kotlin. This all should result in a leaner code base, faster delivery of new features, less bugs and a better user experience.',
       activities: [
-
+        'Migrated multiple APIs from Apigee to Spring Boot in Kotlin',
+        'Migrated vite based micro-frontend to a TurboRepo based Nextjs monorepo to improve the websites initial load time',
+        'Moved from redux-saga to TanStack Query for async-state management',
+        'Improved E2E tests quality, setup and architecture',
+        'Introduced storybook tests for better component testing',
       ],
     },
     {
@@ -59,17 +63,9 @@ export const englishCV: CVPage[] = [{
       activities: [
         'Created a photoshop-like visual configurator for greenhouses using Fabric.js',
         'Improved overall CSS architecture and responsive design',
-      ],
-    },
-    {
-      title: 'Passionate People client: Let’s Grow',
-      date: 'Apr 2021 – Feb 2022',
-      techStack: [tech.typescript, tech.nodeJs, tech.angular, tech.ngxs, tech.highCharts, tech.jest, tech.nestJS, tech.fabricJs, tech.scss],
-      description: 'Worked in two different teams within Hoogendoorn. Build a sophisticated dashboard for Greenhouse automation, with lots \n' +
-        'of views, reports, graphs and customizable content.',
-      activities: [
         'Migration of .NET Core widgets and charts displayed in iFrames to Angular',
         'Enhanced performance of data heavy dashboard',
+        'Improved the state management using NGXS',
         'Set up a chart configurator with a complex user flow',
         'Created workshops to teach team members about the workings of Angular, RXJS and Observables',
       ],
@@ -89,10 +85,6 @@ export const englishCV: CVPage[] = [{
         'Created tracking time dashboard to analyse and improve the SCRUM process within the team',
       ],
     },
-  ],
-}, {
-  id: 'page-3',
-  workExperience: [
     {
       title: 'Lyceo – Wordpress Developer',
       date: 'Sept 2017 – Aug 2018',
@@ -108,9 +100,14 @@ export const englishCV: CVPage[] = [{
         'Setup S3 Bucket Image CDN hosting.',
         'Tailored webpack setup',
         'Setup E2E tests initially using Nightwatch later using Cypress',
-        'Setup availability monitoring using pingdom and setup performance and error monitoring using Sentry',
+        'Setup availability monitoring using pingdom and performance and error monitoring using Sentry',
       ],
     },
+  ],
+}, {
+  id: 'page-3',
+  workExperience: [
+
     {
       title: 'Freelance Webdeveloper',
       date: 'Apr 2014 – Feb 2018',
